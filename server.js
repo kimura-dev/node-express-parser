@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 const fileReader = require('./utils/fileReader')
 const makeOutputFile = require('./utils/writeFile')
+const xml2js = require('xml2js')
 
 /* Connect to DB */
 // ================================================
@@ -36,4 +37,22 @@ async function writeFile(fileName){
     makeOutputFile(data)
 }
 
-writeFile('./input/test-FACUpdate..xml')
+writeFile('./input/FACUpdate.xml')
+
+// function xml2Js(fileName){
+//     try {
+//         const parsexmlToJs = new xml2js.Parser();
+//         const outputFile = await writeFile(fileName)
+//         console.log(outputFile)
+
+//         parsexmlToJs.parseString(outputFile, function(err, data){
+//             console.log(data)
+//             console.log('Done')
+//         })
+//     } catch (error) {
+//         console.log("something wrong")
+//     }
+// }
+
+// xml2Js('./input/FACUpdate.xml')
+

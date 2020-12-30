@@ -799,4 +799,287 @@
     <FAC_TIE_SK>20000000024133</FAC_TIE_SK>
 </FAC_TIE>
                 </FAC_COMPOSITES>	
+                <EQP_COMPOSITES><EQP>
+                    <ACTIVITY>OCC</ACTIVITY>
+                    <ALLEGIANCE>SW </ALLEGIANCE>
+                    <CC>SW</CC>
+                    <CLASS_LVL>U</CLASS_LVL>
+                    <CONDITION>RDY </CONDITION>
+                    <COORD_BASIS>2 </COORD_BASIS>
+                    <COORD_DATUM>WGE</COORD_DATUM>
+                    <COORD_DERIV>P </COORD_DERIV>
+                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                    <EQP_CODE>L9LAO  </EQP_CODE>
+                    <EQP_ID_NUM>001</EQP_ID_NUM>
+                    <EVAL>1</EVAL>
+                    <LAST_CHG_USERID>MC190103</LAST_CHG_USERID>
+                    <LOC_REASON>FX       </LOC_REASON>
+                    <OPER_STATUS>OPR</OPER_STATUS>
+                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                    <RECORD_STATUS>A</RECORD_STATUS>
+                    <RES_PROD>YF  </RES_PROD>
+                    <COORD>674920000N0202015000E</COORD>
+                    <DATETIME_CREATED>20110228140212</DATETIME_CREATED>
+                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                    <CODEWORD>0</CODEWORD>
+                    <CONTROL_MARK> </CONTROL_MARK>
+                    <DECLASS_ON> </DECLASS_ON>
+                    <FPA>AFLD</FPA>
+                    <QTY_OH>1</QTY_OH>
+                    <QTY_OH_EVAL>1</QTY_OH_EVAL>
+                    <RELEASE_MARK> </RELEASE_MARK>
+                    <WAC>0090</WAC>
+                    <COORD_DATETIME>20190103</COORD_DATETIME>
+                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                    <MAX_DEMO_USE> </MAX_DEMO_USE>
+                    <NOMEN>APRON</NOMEN>
+                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                    <RELIDO>U</RELIDO>
+                    <EQP_SK>20650000128396</EQP_SK>
+                </EQP>
+                <EQP_AFLD>
+                    <CLASS_LVL>U</CLASS_LVL>
+                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                    <EVAL>1</EVAL>
+                    <LAST_CHG_USERID>MC190103</LAST_CHG_USERID>
+                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                    <RECORD_STATUS>A</RECORD_STATUS>
+                    <RES_PROD>YF  </RES_PROD>
+                    <DATETIME_LAST_CHG>20110228140213</DATETIME_LAST_CHG>
+                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                    <CODEWORD>0</CODEWORD>
+                    <CONTROL_MARK> </CONTROL_MARK>
+                    <DECLASS_ON> </DECLASS_ON>
+                    <FPA>AFLD</FPA>
+                    <LOAD_CLASS_EVAL>D</LOAD_CLASS_EVAL>
+                    <LOAD_CLASS_NUM>63</LOAD_CLASS_NUM>
+                    <PAVEMENT_CLASS_NUM>45</PAVEMENT_CLASS_NUM>
+                    <PAVEMENT_EVAL_METHOD>T</PAVEMENT_EVAL_METHOD>
+                    <PAVEMENT_PSI>X</PAVEMENT_PSI>
+                    <PAVEMENT_SUBGRADE>B</PAVEMENT_SUBGRADE>
+                    <PAVEMENT_TYPE>F</PAVEMENT_TYPE>
+                    <RELEASE_MARK> </RELEASE_MARK>
+                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                    <RELIDO>U</RELIDO>
+                    <EQP_SK>20650000128396</EQP_SK>
+                    <EQP_AFLD_SK>20650000083774</EQP_AFLD_SK>
+                </EQP_AFLD>
+                <EQP_FORM>
+                    <CLASS_LVL>U</CLASS_LVL>
+                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                    <EVAL>1</EVAL>
+                    <LAST_CHG_USERID>MC190103</LAST_CHG_USERID>
+                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                    <RECORD_STATUS>A</RECORD_STATUS>
+                    <RES_PROD>YF  </RES_PROD>
+                    <DATETIME_LAST_CHG>20110228140213</DATETIME_LAST_CHG>
+                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                    <AREA>29821.900000000001</AREA>
+                    <AREA_EVAL>1</AREA_EVAL>
+                    <AREA_UM>M2</AREA_UM>
+                    <CODEWORD>0</CODEWORD>
+                    <CONTROL_MARK> </CONTROL_MARK>
+                    <DECLASS_ON> </DECLASS_ON>
+                    <ENTRY_WIDTH>304.5</ENTRY_WIDTH>
+                    <ENTRY_WIDTH_EVAL>1</ENTRY_WIDTH_EVAL>
+                    <ENTRY_WIDTH_UM>M</ENTRY_WIDTH_UM>
+                    <FPA>AFLD</FPA>
+                    <LENGTH>326.10000000000002</LENGTH>
+                    <LENGTH_EVAL>1</LENGTH_EVAL>
+                    <LENGTH_UM>M</LENGTH_UM>
+                    <RELEASE_MARK> </RELEASE_MARK>
+                    <SHAPE>IRR</SHAPE>
+                    <SURFACE>ASPCT</SURFACE>
+                    <WIDTH>91.400000000000006</WIDTH>
+                    <WIDTH_EVAL>1</WIDTH_EVAL>
+                    <WIDTH_UM>M</WIDTH_UM>
+                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                    <RELIDO>U</RELIDO>
+                    <EQP_SK>20650000128396</EQP_SK>
+                    <EQP_FORM_SK>20650000111965</EQP_FORM_SK>
+                </EQP_FORM>
+                <EQP_TRAIT>
+                    <CLASS_LVL>U</CLASS_LVL>
+                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                    <EQP_TRAIT>LTAP</EQP_TRAIT>
+                    <EVAL>1</EVAL>
+                    <LAST_CHG_USERID>MC190103</LAST_CHG_USERID>
+                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                    <RECORD_STATUS>A</RECORD_STATUS>
+                    <RES_PROD>YF  </RES_PROD>
+                    <TRAIT_EVAL>2</TRAIT_EVAL>
+                    <DATETIME_LAST_CHG>20190103081412</DATETIME_LAST_CHG>
+                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                    <CODEWORD>0</CODEWORD>
+                    <CONTROL_MARK> </CONTROL_MARK>
+                    <DECLASS_ON> </DECLASS_ON>
+                    <FPA>AFLD</FPA>
+                    <RELEASE_MARK> </RELEASE_MARK>
+                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                    <RELIDO>U</RELIDO>
+                    <EQP_SK>20650000128396</EQP_SK>
+                    <EQP_TRAIT_SK>20650000082680</EQP_TRAIT_SK>
+                </EQP_TRAIT>
+                <EQP_TIE>
+                    <ASSOC>O  B</ASSOC>
+                    <CLASS_LVL>U</CLASS_LVL>
+                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                    <EVAL>1</EVAL>
+                    <LAST_CHG_USERID>MC190103</LAST_CHG_USERID>
+                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                    <RECORD_STATUS>A</RECORD_STATUS>
+                    <RES_PROD>YF  </RES_PROD>
+                    <DATETIME_LAST_CHG>20110228140213</DATETIME_LAST_CHG>
+                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                    <TIE_TO_ENTITY>FAC</TIE_TO_ENTITY>
+                    <CODEWORD>0</CODEWORD>
+                    <CONTROL_MARK> </CONTROL_MARK>
+                    <DECLASS_ON> </DECLASS_ON>
+                    <FPA>AFLD</FPA>
+                    <RELEASE_MARK> </RELEASE_MARK>
+                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                    <RELIDO>U</RELIDO>
+                    <TIE_FROM_SK>20650000128396</TIE_FROM_SK>
+                    <TIE_TO_SK>20000000047652</TIE_TO_SK>
+                    <EQP_TIE_SK>20650000183759</EQP_TIE_SK>
+                </EQP_TIE>
+                                </EQP_COMPOSITES>
+                                <EQP_COMPOSITES><EQP>
+                                    <ACTIVITY>OCC</ACTIVITY>
+                                    <ALLEGIANCE>SW </ALLEGIANCE>
+                                    <CC>SW</CC>
+                                    <CLASS_LVL>U</CLASS_LVL>
+                                    <CONDITION>RDY </CONDITION>
+                                    <COORD_BASIS>2 </COORD_BASIS>
+                                    <COORD_DATUM>WGE</COORD_DATUM>
+                                    <COORD_DERIV>P </COORD_DERIV>
+                                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                                    <EQP_CODE>L9LAP  </EQP_CODE>
+                                    <EQP_ID_NUM>003</EQP_ID_NUM>
+                                    <EVAL>2</EVAL>
+                                    <LAST_CHG_USERID>MC110228</LAST_CHG_USERID>
+                                    <LOC_REASON>FX       </LOC_REASON>
+                                    <OPER_STATUS>OPR</OPER_STATUS>
+                                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                                    <RECORD_STATUS>A</RECORD_STATUS>
+                                    <RES_PROD>YF  </RES_PROD>
+                                    <COORD>674920000N0202015000E</COORD>
+                                    <DATETIME_CREATED>20110228140216</DATETIME_CREATED>
+                                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                                    <CODEWORD>0</CODEWORD>
+                                    <CONTROL_MARK> </CONTROL_MARK>
+                                    <DECLASS_ON> </DECLASS_ON>
+                                    <FPA>AFLD</FPA>
+                                    <QTY_OH>1</QTY_OH>
+                                    <QTY_OH_EVAL>2</QTY_OH_EVAL>
+                                    <RELEASE_MARK> </RELEASE_MARK>
+                                    <WAC>0090</WAC>
+                                    <COORD_DATETIME>20110228</COORD_DATETIME>
+                                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                                    <MAX_DEMO_USE> </MAX_DEMO_USE>
+                                    <NOMEN>APRON,PAD (ENGINE TEST)</NOMEN>
+                                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                                    <RELIDO>U</RELIDO>
+                                    <EQP_SK>20650000128397</EQP_SK>
+                                </EQP>
+                                <EQP_AFLD>
+                                    <CLASS_LVL>U</CLASS_LVL>
+                                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                                    <EVAL>2</EVAL>
+                                    <LAST_CHG_USERID>MC110228</LAST_CHG_USERID>
+                                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                                    <RECORD_STATUS>A</RECORD_STATUS>
+                                    <RES_PROD>YF  </RES_PROD>
+                                    <DATETIME_LAST_CHG>20110228140216</DATETIME_LAST_CHG>
+                                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                                    <CODEWORD>0</CODEWORD>
+                                    <CONTROL_MARK> </CONTROL_MARK>
+                                    <DECLASS_ON> </DECLASS_ON>
+                                    <FPA>AFLD</FPA>
+                                    <LOAD_CLASS_EVAL> </LOAD_CLASS_EVAL>
+                                    <PAVEMENT_EVAL_METHOD> </PAVEMENT_EVAL_METHOD>
+                                    <PAVEMENT_PSI> </PAVEMENT_PSI>
+                                    <PAVEMENT_SUBGRADE> </PAVEMENT_SUBGRADE>
+                                    <PAVEMENT_TYPE> </PAVEMENT_TYPE>
+                                    <RELEASE_MARK> </RELEASE_MARK>
+                                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                                    <RELIDO>U</RELIDO>
+                                    <EQP_SK>20650000128397</EQP_SK>
+                                    <EQP_AFLD_SK>20650000083775</EQP_AFLD_SK>
+                                </EQP_AFLD>
+                                <EQP_FORM>
+                                    <CLASS_LVL>U</CLASS_LVL>
+                                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                                    <EVAL>2</EVAL>
+                                    <LAST_CHG_USERID>MC110228</LAST_CHG_USERID>
+                                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                                    <RECORD_STATUS>A</RECORD_STATUS>
+                                    <RES_PROD>YF  </RES_PROD>
+                                    <DATETIME_LAST_CHG>20110228140216</DATETIME_LAST_CHG>
+                                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                                    <AREA>3809.0</AREA>
+                                    <AREA_EVAL>2</AREA_EVAL>
+                                    <AREA_UM>M2</AREA_UM>
+                                    <CODEWORD>0</CODEWORD>
+                                    <CONTROL_MARK> </CONTROL_MARK>
+                                    <DECLASS_ON> </DECLASS_ON>
+                                    <ENTRY_WIDTH>304.5</ENTRY_WIDTH>
+                                    <ENTRY_WIDTH_EVAL>2</ENTRY_WIDTH_EVAL>
+                                    <ENTRY_WIDTH_UM>M</ENTRY_WIDTH_UM>
+                                    <FPA>AFLD</FPA>
+                                    <LENGTH>62.5</LENGTH>
+                                    <LENGTH_EVAL>2</LENGTH_EVAL>
+                                    <LENGTH_UM>M</LENGTH_UM>
+                                    <RELEASE_MARK> </RELEASE_MARK>
+                                    <SHAPE>REC</SHAPE>
+                                    <SURFACE>ASPCT</SURFACE>
+                                    <WIDTH>61.0</WIDTH>
+                                    <WIDTH_EVAL>2</WIDTH_EVAL>
+                                    <WIDTH_UM>M</WIDTH_UM>
+                                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                                    <RELIDO>U</RELIDO>
+                                    <EQP_SK>20650000128397</EQP_SK>
+                                    <EQP_FORM_SK>20650000111966</EQP_FORM_SK>
+                                </EQP_FORM>
+                                <EQP_TIE>
+                                    <ASSOC>O  B</ASSOC>
+                                    <CLASS_LVL>U</CLASS_LVL>
+                                    <DOMAIN_LVL>CO</DOMAIN_LVL>
+                                    <EVAL>2</EVAL>
+                                    <LAST_CHG_USERID>MC110228</LAST_CHG_USERID>
+                                    <PROD_LVL_CAP>S</PROD_LVL_CAP>
+                                    <RECORD_STATUS>A</RECORD_STATUS>
+                                    <RES_PROD>YF  </RES_PROD>
+                                    <DATETIME_LAST_CHG>20110228140216</DATETIME_LAST_CHG>
+                                    <REVIEW_DATE>20180409</REVIEW_DATE>
+                                    <TIE_TO_ENTITY>FAC</TIE_TO_ENTITY>
+                                    <CODEWORD>0</CODEWORD>
+                                    <CONTROL_MARK> </CONTROL_MARK>
+                                    <DECLASS_ON> </DECLASS_ON>
+                                    <FPA>AFLD</FPA>
+                                    <RELEASE_MARK> </RELEASE_MARK>
+                                    <DATETIME_LAST_INFO>20180103000000</DATETIME_LAST_INFO>
+                                    <DECLASS_ON_DATE> </DECLASS_ON_DATE>
+                                    <SITE_ORIGINATOR>20650</SITE_ORIGINATOR>
+                                    <RELIDO>U</RELIDO>
+                                    <TIE_FROM_SK>20650000128397</TIE_FROM_SK>
+                                    <TIE_TO_SK>20000000047652</TIE_TO_SK>
+                                    <EQP_TIE_SK>20650000183760</EQP_TIE_SK>
+                                </EQP_TIE>
+                                                </EQP_COMPOSITES>	
+                
             </UPDATE_COMPOSITES>			<USER_INFO>				<RES_PROD>YF</RES_PROD>			</USER_INFO>		</requestUpdateComposite>	</s:Body></s:Envelope>
