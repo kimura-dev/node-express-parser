@@ -28,13 +28,11 @@ app.listen(5000, () => console.log("Server started..."))
 
 async function convertFileToString(fileName){
     const file = await fileReader(fileName)
-    // console.log("convertFileToString file: " + file)
     return file
 }
 
 async function readAndWriteFile(fileName){
     const data = await convertFileToString(fileName)
-    // console.log("this is readAndWrite data: " + data)
     return makeOutputFile(data)
 }
 
@@ -42,11 +40,11 @@ async function xml2Json(fileName){
     try {
         const parsexmlToJs = new xml2js.Parser();
         const outputFile = await readAndWriteFile(fileName)
-      
-        console.log("outputFile search = "+outputFile.search('</EQP_COMPOSITES>'))
+        console.log("outputFile search = "+ outputFile.search('</EQP_COMPOSITES>'))
+        console.log("outputFile search = "+ outputFile.search('</RMK_COMPOSITES>'))
         parsexmlToJs.parseString(outputFile, function(err, data){
             const json = JSON.stringify(data)
-            console.log(typeof json)
+            console.log("stringified: " + json)
             console.log(JSON.parse(json))
             console.log('Done')
             return json
@@ -56,8 +54,6 @@ async function xml2Json(fileName){
     }
 }
 
+const useableJson = xml2Json('./output/GMI_MIDB_OUTPUT/Composites/fullComposite.txt')
 
-
-const useableJson = xml2Json('./output/anotherFullComposite.txt')
-
-console.log(useableJson)
+// console.log(useableJson)
