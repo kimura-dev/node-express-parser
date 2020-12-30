@@ -2,9 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const fileReader = require('./utils/fileReader')
-const makeOutputFile = require('./utils/makeOutputFile')
-const xml2js = require('xml2js')
+const arrangeInputFile = require('./utils/arrangeInputFile')
 
 /* Connect to DB */
 // ================================================
@@ -26,34 +24,4 @@ app.use('/facComposites', facCompositeRouter)
 
 app.listen(5000, () => console.log("Server started..."))
 
-async function convertFileToString(fileName){
-    const file = await fileReader(fileName)
-    return file
-}
-
-async function readAndWriteFile(fileName){
-    const data = await convertFileToString(fileName)
-    return makeOutputFile(data)
-}
-
-async function xml2Json(fileName){
-    try {
-        const parsexmlToJs = new xml2js.Parser();
-        const outputFile = await readAndWriteFile(fileName)
-        console.log("outputFile search = "+ outputFile.search('</EQP_COMPOSITES>'))
-        console.log("outputFile search = "+ outputFile.search('</RMK_COMPOSITES>'))
-        parsexmlToJs.parseString(outputFile, function(err, data){
-            const json = JSON.stringify(data)
-            console.log("stringified: " + json)
-            console.log(JSON.parse(json))
-            console.log('Done')
-            return json
-        })
-    } catch (error) {
-        console.log("something wrong")
-    }
-}
-
-const useableJson = xml2Json('./output/GMI_MIDB_OUTPUT/Composites/fullComposite.txt')
-
-// console.log(useableJson)
+arrangeInputFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate.xml')
