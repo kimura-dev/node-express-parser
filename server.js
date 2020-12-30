@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const fileReader = require('./utils/fileReader')
-const makeOutputFile = require('./utils/writeFile')
+const makeOutputFile = require('./utils/makeOutputFile')
 const xml2js = require('xml2js')
 
 /* Connect to DB */
@@ -28,31 +28,36 @@ app.listen(5000, () => console.log("Server started..."))
 
 async function convertFileToString(fileName){
     const file = await fileReader(fileName)
-    // console.log(file)
+    // console.log("convertFileToString file: " + file)
     return file
 }
 
-async function writeFile(fileName){
+async function readAndWriteFile(fileName){
     const data = await convertFileToString(fileName)
-    makeOutputFile(data)
+    // console.log("this is readAndWrite data: " + data)
+    return makeOutputFile(data)
 }
 
-writeFile('./input/FACUpdate.xml')
+async function xml2Json(fileName){
+    try {
+        const parsexmlToJs = new xml2js.Parser();
+        const outputFile = await readAndWriteFile(fileName)
+      
+        console.log("outputFile search = "+outputFile.search('</EQP_COMPOSITES>'))
+        parsexmlToJs.parseString(outputFile, function(err, data){
+            const json = JSON.stringify(data)
+            console.log(typeof json)
+            console.log(JSON.parse(json))
+            console.log('Done')
+            return json
+        })
+    } catch (error) {
+        console.log("something wrong")
+    }
+}
 
-// function xml2Js(fileName){
-//     try {
-//         const parsexmlToJs = new xml2js.Parser();
-//         const outputFile = await writeFile(fileName)
-//         console.log(outputFile)
 
-//         parsexmlToJs.parseString(outputFile, function(err, data){
-//             console.log(data)
-//             console.log('Done')
-//         })
-//     } catch (error) {
-//         console.log("something wrong")
-//     }
-// }
 
-// xml2Js('./input/FACUpdate.xml')
+const useableJson = xml2Json('./output/anotherFullComposite.txt')
 
+console.log(useableJson)
