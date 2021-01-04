@@ -1,7 +1,10 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
-const arrangeInputFile = require('./utils/arrangeInputFile')
+const arrangeIncomingFile = require('./utils/arrangeIncomingFile')
 const connectToDatabase = require('./utils/connectToDatabase')
+const dotenv = require('dotenv');
+const PORT = process.env.PORT;
 
 /* Connect Database */
 connectToDatabase()
@@ -9,12 +12,16 @@ connectToDatabase()
 /* Configure server to accept JSON */
 app.use(express.json())
 
-/* Setup rotues */
+app.get('/', (req, res) => {
+    res.send('API Interface Running')
+})
+
 const facCompositeRouter = require('./routes/facComposites')
 app.use('/facComposites', facCompositeRouter)
 
-/* Setup server to listen on port 5000 */
-app.listen(5000, () => console.log("Server started..."))
+app.listen(PORT, () => console.log(`Server started on port ${PORT}...`))
+
 
 // /* Interact with input file */
-arrangeInputFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate.xml')
+arrangeIncomingFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate-F.xml', './output/GMI_MIDB_OUTPUT/Composites/FAC_UODATE_XML.txt')
+
