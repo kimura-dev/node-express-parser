@@ -1,6 +1,6 @@
 const readInputFile = require('./readInputFile')
 const writeOutputFile = require('./writeOutputFile')
-const xml2Js = require('./xml2JsonParser')
+const convertXmlToJsonFile = require('./convertXmlToJsonFile')
 const typeChecker = require('./typeChecker')
 
 function removeXmlHeaderAndFooter(dataStr){
@@ -36,15 +36,11 @@ async function arrangeIncomingFile(inputFile, outputFile){
         const newStr = await removeXmlHeaderAndFooter(fileContentStr);
         // console.log(newStr);
         // console.log('=======================================');
-        // typeChecker('newStr', newStr, 'Inside arranegIncoming');
-        return newStr;
-        // const json = await xml2Js(newStr)
-        // console.log(json)
-        // const outputFileContent = await writeOutputFile(`${outputFile}`, newStr);
-        // const json = JSON.stringify(outputFileContents)
-        // console.log(json)
-        // const obj = await xml2Js(outputFileContents)
-        // console.log(obj)
+        // typeChecker('newStr', newStr, 'Inside arranegIncomingFile');
+        // return newStr;
+        const obj = await convertXmlToJsonFile(newStr, outputFile)
+        console.log(obj)
+
         // return obj;
     } catch (error) {
         console.error(error);

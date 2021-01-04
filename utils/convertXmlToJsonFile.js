@@ -22,30 +22,24 @@ function logObjProps(obj){
     }
 }
 
-function toJson(data){
-    return JSON.stringify(data)
-}
-
-function xml2Js(xmlStr){
+function convertXmlToJsonFile(xmlStr, fileName){
     parsexmlToJs.parseString(xmlStr, async function(err, data){
         try {
         const json = await JSON.stringify(data, null, 4)
-        // typeChecker('newJson', newJson, "inside xml2Js")
-        
-        // writeOutputFile('./output/GMI_MIDB_OUTPUT/Composites/_composite_json.json', json)
-        console.log("stringified: " + json)
-        console.log("=======================================")
-        typeChecker('json', json, 'returned from xml2js()')
-        // const obj = JSON.parse(json)
+        // console.log("stringified: " + json)
+        // console.log("=======================================")
+        // typeChecker('json', json, 'returned from xml2js()')
+        const obj = JSON.parse(json)
         // logObjProps(obj)
         // typeChecker('obj', obj, "inside xml2Js")
-        // console.log(obj)
-        // const formatObj = util.inspect(obj, showHidden=false, depth=12, colorize=true);
-        // typeChecker('formatObj', formatObj, 'inside xml2Js')
-        // console.log(formatObj)
+        // // console.log(obj)
+        const formatJsonStr = util.inspect(obj, showHidden=false, depth=12, colorize=true);
+        console.log(formatJsonStr)
+        typeChecker('formatObj', formatJsonStr, 'inside xml2Js')
+        writeOutputFile(`${fileName}_json.txt`, formatJsonStr)
         // inspect(json)
-        // console.log('Done');
-        return json
+        console.log('Done');
+        return obj
         } catch (error) {
             console.error(error)
         }
@@ -53,4 +47,4 @@ function xml2Js(xmlStr){
     })
 }
 
-module.exports = xml2Js
+module.exports = convertXmlToJsonFile

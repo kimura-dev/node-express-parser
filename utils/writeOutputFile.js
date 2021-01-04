@@ -1,7 +1,5 @@
 const fs = require('fs').promises;
 
-
-
 async function writeOutputFile(fileName, data) {
   try {
     await fs.writeFile(fileName, data);
