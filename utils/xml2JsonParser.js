@@ -22,15 +22,20 @@ function logObjProps(obj){
     }
 }
 
+function toJson(data){
+    return JSON.stringify(data)
+}
+
 function xml2Js(xmlStr){
-     parsexmlToJs.parseString(xmlStr, async function(err, data){
+    parsexmlToJs.parseString(xmlStr, async function(err, data){
         try {
         const json = await JSON.stringify(data, null, 4)
-        // typeChecker('json', json, "inside xml2Js")
-        console.log(json)
+        // typeChecker('newJson', newJson, "inside xml2Js")
+        
         // writeOutputFile('./output/GMI_MIDB_OUTPUT/Composites/_composite_json.json', json)
-        // console.log("stringified: " + json)
-        // console.log("=======================================")
+        console.log("stringified: " + json)
+        console.log("=======================================")
+        typeChecker('json', json, 'returned from xml2js()')
         // const obj = JSON.parse(json)
         // logObjProps(obj)
         // typeChecker('obj', obj, "inside xml2Js")
@@ -39,11 +44,12 @@ function xml2Js(xmlStr){
         // typeChecker('formatObj', formatObj, 'inside xml2Js')
         // console.log(formatObj)
         // inspect(json)
-        console.log('Done');
-        // return obj
+        // console.log('Done');
+        return json
         } catch (error) {
             console.error(error)
         }
+
     })
 }
 
