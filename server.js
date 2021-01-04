@@ -16,5 +16,5 @@ app.use('/facComposites', facCompositeRouter)
 /* Setup server to listen on port 5000 */
 app.listen(5000, () => console.log("Server started..."))
 
-// /* Interact with input files */
+// /* Interact with input file */
 arrangeInputFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate.xml')

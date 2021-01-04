@@ -9,5 +9,6 @@ async function writeOutputFile(data) {
     console.error(`Got an error trying to write to a file: ${error.message}`);
   }
 }
+// './output/GMI_MIDB_OUTPUT/Composites/theBrandNewFullComposite.txt'
 
 module.exports = writeOutputFile
