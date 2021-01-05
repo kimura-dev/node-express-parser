@@ -1,11 +1,8 @@
 require('dotenv').config()
 const express = require('express');
 const app = express();
-const arrangeIncomingFile = require('./utils/arrangeIncomingFile')
+const handleIncomingFile = require('./utils/handleIncomingFile')
 const connectToDatabase = require('./utils/connectToDatabase')
-const writeOutputFile = require('./utils/writeOutputFile');
-const xml2Js = require('./utils/convertXmlToJsonFile');
-const dotenv = require('dotenv');
 const PORT = process.env.PORT;
 
 /* Connect Database */
@@ -24,5 +21,4 @@ app.use('/facComposites', facCompositeRouter)
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}...`))
 
-arrangeIncomingFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate-F.xml', './output/GMI_MIDB_OUTPUT/Composites/FAC_UPDATE');
-
+handleIncomingFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate-F.xml', './output/GMI_MIDB_OUTPUT/Composites/FAC_UPDATE');
