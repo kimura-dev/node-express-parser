@@ -15,18 +15,14 @@ function removeXmlHeaderAndFooter(dataStr){
     }
 }
 
+
+
 async function handleIncomingFile(inputFile, outputFile){
     try {
         const fileContentStr = await readInputFile(inputFile);
-        
-        const newStr = await removeXmlHeaderAndFooter(fileContentStr);
-        // console.log(newStr);
-        // console.log('=======================================')
-        // return newStr;
-        const obj = await convertXmlToJsonFile(newStr, outputFile)
-        console.log(obj)
-
-        return obj;
+        const newStr = removeXmlHeaderAndFooter(fileContentStr);
+        writeOutputFile(`${outputFile}_xaml.txt`, newStr)
+        return newStr;
     } catch (error) {
         console.error(error);
     }
