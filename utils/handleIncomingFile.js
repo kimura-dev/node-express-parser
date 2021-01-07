@@ -16,7 +16,7 @@ async function handleIncomingFile(inputFile, outputFile){
     try {
         const fileContentStr = await readInputFile(inputFile);
         const newStr = removeXmlHeaderAndFooter(fileContentStr);
-        writeOutputFile(`${outputFile}_xaml.txt`, newStr)
+        writeOutputFile(`${outputFile}`, newStr)
         return newStr;
     } catch (error) {
         console.error(error);
