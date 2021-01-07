@@ -6,7 +6,7 @@ function replaceAll(data, search, replace) {
 }
 
 // ?? change UPDATED_COMPOSITES => PRIMARY_COMPOSITES ??
-async function createXML(inputFile, outputFile){
+async function createADDS(inputFile, outputFile){
     const str = await readInputFile(inputFile)
     const first = replaceAll(str, "</gmi:", "Close_Tag")
     const second = replaceAll(first, "<gmi:", "Open_Tag")
@@ -20,4 +20,4 @@ async function createXML(inputFile, outputFile){
     return complete;
 }
 
-module.exports = createXML
+module.exports = createADDS
