@@ -1,29 +1,27 @@
-require('dotenv').config()
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const handleIncomingFile = require('./utils/handleIncomingFile')
-const connectToDatabase = require('./utils/connectToDatabase')
-const createGMI = require('./utils/createGMI')
+const handleIncomingFile = require('./utils/handleIncomingFile');
+const connectToDatabase = require('./config/connectToDatabase');
+const createGMI = require('./utils/createGMI');
 const PORT = process.env.PORT;
+const INPUT_FILE = './input/ADDS_AMS_INPUT/Composities/FACUpdate-F.xml';
+const OUTPUT_FILE = './output/GMI_MIDB_OUTPUT/Composites/FAC_UPDATE_NEW';
 
-/* Connect Database */
-connectToDatabase()
+connectToDatabase();
 
-/* Configure server to accept JSON */
-app.use(express.json())
+app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('API Interface Running')
+    res.send('API Interface Running');
 })
 
 const facCompositeRouter = require('./routes/facComposites');
 
-app.use('/facComposites', facCompositeRouter)
+app.use('/facComposites', facCompositeRouter);
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}...`))
+app.listen(PORT, () => console.log(`Server started on port ${PORT}...`));
 
-handleIncomingFile('./input/ADDS_AMS_INPUT/Composities/FACUpdate-F.xml', './output/GMI_MIDB_OUTPUT/Composites/FAC_UPDATE_NEW');
+handleIncomingFile(INPUT_FILE, OUTPUT_FILE);
 
-createGMI()
-
-
+createGMI(); 

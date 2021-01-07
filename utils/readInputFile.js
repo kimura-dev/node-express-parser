@@ -13,8 +13,3 @@ async function readInputFile(filePath) {
 }
 
 module.exports = readInputFile
-
-/* Potential Queries */
-//=======================================================
-//  fileToString.search('</EQP_COMPOSITES>'))
-//  fileToString.search('</RMK_COMPOSITES>'))

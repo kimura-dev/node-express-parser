@@ -1,10 +1,7 @@
 const readInputFile = require('./readInputFile')
 const writeOutputFile = require('./writeOutputFile')
-const convertXmlToJsonFile = require('./convertXmlToJsonFile')
-const typeChecker = require('./typeChecker')
 
 function removeXmlHeaderAndFooter(dataStr){
-    //take in string data
     if(typeof dataStr === 'string'){
         const begin = dataStr.search("<UPDATE_COMPOSITES")
         const end = dataStr.search('<USER_INFO>')
@@ -14,8 +11,6 @@ function removeXmlHeaderAndFooter(dataStr){
         console.log(`Item must be of type string`)
     }
 }
-
-
 
 async function handleIncomingFile(inputFile, outputFile){
     try {

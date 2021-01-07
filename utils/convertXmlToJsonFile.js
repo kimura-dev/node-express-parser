@@ -4,7 +4,6 @@ const parsexmlToJs = new xml2js.Parser();
 const typeChecker = require('./typeChecker');
 var inspect = require('eyes').inspector({maxLength: false})
 const writeOutputFile = require('./writeOutputFile');
-const xmlSpecialChar = require('./xmlSpecialChars')
 
 function logObjProps(obj){
     if(typeof obj === 'object'){
@@ -23,14 +22,13 @@ function logObjProps(obj){
     }
 }
 
+// WIP
 function convertXmlToJsonFile(xmlStr, fileName){
     parsexmlToJs.parseString(xmlStr, async function(err, data){
         try {
         const json = await JSON.stringify(data, null, 4)
         const obj = JSON.parse(json)
         const formatJsonStr = util.inspect(obj, showHidden=false, depth=12, colorize=true);
-        // console.log(formatJsonStr)
-        // console.log(xmlSpecialChar(formatJsonStr))
 
         await writeOutputFile(`${fileName}_json.txt`, formatJsonStr)
         console.log('Done');
