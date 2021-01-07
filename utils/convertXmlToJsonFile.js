@@ -1,8 +1,6 @@
 const xml2js = require('xml2js');
 const util = require('util');
 const parsexmlToJs = new xml2js.Parser();
-const typeChecker = require('./typeChecker');
-var inspect = require('eyes').inspector({maxLength: false})
 const writeOutputFile = require('./writeOutputFile');
 
 function logObjProps(obj){

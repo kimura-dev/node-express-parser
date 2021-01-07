@@ -17,9 +17,9 @@ async function createGMI(inputFile, outputFile){
     const second = replaceAll(first, "<", "Open_Tag")
     const third = replaceAll(second, "Open_Tag", "<gmi:")
     const fourth = replaceAll(third, "Close_Tag", "</gmi:")
-    const end = replaceAll(fourth, "SITE_ORIGINATOR", "AV_SITE_ID")
+    const end =  replaceAll(fourth, "SITE_ORIGINATOR", "AV_SITE_ID")
     const complete = `${gmiHeader}${end}${gmiFooter}`
-    // Create GMI File
+    // Create
     writeOutputFile(outputFile, complete)
     return complete;
 }
