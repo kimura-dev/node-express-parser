@@ -14,8 +14,6 @@ async function createADDS(inputFile, outputFile){
     const fourth = replaceAll(third, "Close_Tag", "</")
     const end = replaceAll(fourth, "AV_SITE_ID", "SITE_ORIGINATOR")
     const complete = `${end}`
-    // console.log(complete)
-    // console.log('======================')
     writeOutputFile(outputFile, complete)
     return complete;
 }

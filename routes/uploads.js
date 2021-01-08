@@ -9,7 +9,7 @@ router.post("/", (req, res) => {
             const fileName = file.name
             console.log(fileName)
             file.mv(__dirname.replace("/routes","/") + 'xml-to-xaml/input/ADDS_AMS_INPUT/test/' + fileName)
-            res.send("File Upload Complete")
+            res.send(file.data.toString('utf-8'))
         }
     } catch (error) {
         console.log(error.message)

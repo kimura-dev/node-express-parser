@@ -32,4 +32,3 @@ app.use('/', uploadsRouter)
 app.listen(PORT, () => console.log(`Server started on port ${PORT}...`));
 
 completeConversionProcess(ADDS_INPUT_FILE, GMI_OUTPUT_DIR, ADDS_OUTPUT_DIR)
-
