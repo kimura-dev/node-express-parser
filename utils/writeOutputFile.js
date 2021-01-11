@@ -1,9 +1,12 @@
 const fs = require('fs');
 
-async function writeOutputFile(fileName, data) {
+let count = 0;
+
+function writeOutputFile(fileName, data) {
+  count++
   try {
-    await fs.writeFileSync(fileName, data);
-    console.log('File write successful')
+     fs.writeFileSync(fileName, data);
+    console.log('File write successful ' + count)
     return data
   } catch (error) {
     console.error(`Got an error trying to write to a file: ${error.message}`);

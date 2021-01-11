@@ -1,18 +1,18 @@
-GET http://localhost:5000/facComposites
+GET http://localhost:8600/facComposites
 
 ###
 
-GET http://localhost:5000/facComposites/5feca69d70f51db086484668
+GET http://localhost:8600/facComposites/5feca69d70f51db086484668
 
 ###
 
-POST http://localhost:5000/facComposites
+POST http://localhost:8600/facComposites
 Content-Type: application/json
 
 {
-    "subscribed": "my new one"
+    "subscribed":"1/11/20202 new one"
 }
 
 ###
 
-DELETE http://localhost:5000/facComposites/5feba20564ee3b9f9c484091
+DELETE http://localhost:8600/facComposites/5feba20564ee3b9f9c484091

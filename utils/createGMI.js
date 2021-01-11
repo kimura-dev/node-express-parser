@@ -9,9 +9,9 @@ function replaceAll(data, search, replace) {
     return data.split(search).join(replace);
 }
 
-async function createGMI(inputFile, outputFile){
+ function createGMI(inputFile, outputFile){
     // Read
-    const str = await readInputFile(inputFile)
+    const str =  readInputFile(inputFile)
     // Parse
     const first = replaceAll(str, "</", "Close_Tag")
     const second = replaceAll(first, "<", "Open_Tag")

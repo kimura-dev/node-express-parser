@@ -6,8 +6,8 @@ function replaceAll(data, search, replace) {
 }
 
 // ?? change UPDATED_COMPOSITES => PRIMARY_COMPOSITES ??
-async function createADDS(inputFile, outputFile){
-    const str = await readInputFile(inputFile)
+function createADDS(inputFile, outputFile){
+    const str =  readInputFile(inputFile)
     const first = replaceAll(str, "</gmi:", "Close_Tag")
     const second = replaceAll(first, "<gmi:", "Open_Tag")
     const third = replaceAll(second, "Open_Tag", "<")
