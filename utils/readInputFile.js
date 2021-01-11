@@ -1,8 +1,9 @@
-const fs = require('fs').promises;
+const fs = require('fs');
 
 async function readInputFile(filePath) {
   try {
-    const file = await fs.readFile(filePath)
+    const fd = fs.openSync(filePath, 'rs')
+    const file = await fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'})
     const fileToString = file.toString()
     console.log('File read successful')
     return fileToString

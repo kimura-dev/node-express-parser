@@ -5,6 +5,7 @@ const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
+const path = require('path')
 const connectToDatabase = require('./config/connectToDatabase');
 const completeConversionProcess = require('./utils/completeConversionProcess')
 const PORT = process.env.PORT;

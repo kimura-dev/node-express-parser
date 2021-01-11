@@ -15,9 +15,10 @@ function removeXmlHeaderAndFooter(dataStr){
 async function handleIncomingFile(inputFile, outputFile){
     try {
         const fileContentStr = await readInputFile(inputFile);
-        const newStr = removeXmlHeaderAndFooter(fileContentStr);
-        writeOutputFile(`${outputFile}`, newStr)
-        return newStr;
+        const newStr = await removeXmlHeaderAndFooter(fileContentStr);
+        await writeOutputFile(outputFile, newStr).then(() => {
+            return newStr;
+        })
     } catch (error) {
         console.error(error);
     }
