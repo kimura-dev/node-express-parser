@@ -17,6 +17,9 @@ connectToDatabase();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(morgan('combined'))
+morgan.token("timed", "A new :method request for :url was received. " + 
+"It took :total-time[2] milliseconds to be resolved with a :status status")
 app.use(fileUpload())
 
 app.get('/', (req, res) => {
