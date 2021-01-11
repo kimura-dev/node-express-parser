@@ -11,20 +11,17 @@ function replaceAll(data, search, replace) {
 
  function createGMI(inputFile, outputFile){
      try {
-         // Read
-    const str =  readInputFile(inputFile)
-    // Parse
-    const first = replaceAll(str, "</", "Close_Tag")
-    const second = replaceAll(first, "<", "Open_Tag")
-    const third = replaceAll(second, "Open_Tag", "<gmi:")
-    const fourth = replaceAll(third, "Close_Tag", "</gmi:")
-    const end =  replaceAll(fourth, "SITE_ORIGINATOR", "AV_SITE_ID")
-    const complete = `${gmiHeader}${end}${gmiFooter}`
-    // Create
-    writeOutputFile(outputFile, complete)
+        const str =  readInputFile(inputFile)
+        const first = replaceAll(str, "</", "Close_Tag")
+        const second = replaceAll(first, "<", "Open_Tag")
+        const third = replaceAll(second, "Open_Tag", "<gmi:")
+        const fourth = replaceAll(third, "Close_Tag", "</gmi:")
+        const end =  replaceAll(fourth, "SITE_ORIGINATOR", "AV_SITE_ID")
+        const complete = `${gmiHeader}${end}${gmiFooter}`
+        writeOutputFile(outputFile, complete)
     return complete;
      } catch (error) {
-         throw new Error(`Got an error inside of createGMI(): ${error.message}`)
+        console.error(`Got an error inside of createGMI(): ${error.name} ${error.message}`)
      }
     
 }

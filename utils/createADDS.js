@@ -18,7 +18,7 @@ function createADDS(inputFile, outputFile){
         writeOutputFile(outputFile, complete)
         return complete;
     } catch (error) {
-        throw new Error(`Got an error inside of createADDS(): ${error.message}`)
+        console.error(`Got an error inside of createADDS(): ${error.name} ${error.message}`)
     }
    
 }

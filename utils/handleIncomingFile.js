@@ -20,7 +20,7 @@ function handleIncomingFile(inputFile, outputFile){
 
         return newStr;
     } catch (error) {
-        throw new Error(`Got an error inside handleIncomingFile(): ${error.message}`)
+        console.error(`Got an error inside handleIncomingFile(): ${error.name} ${error.message}`)
     }
 }
 

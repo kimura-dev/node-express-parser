@@ -1,7 +1,7 @@
 const xml2js = require('xml2js');
 const util = require('util');
 const parsexmlToJs = new xml2js.Parser();
-const writeOutputFile = require('./writeOutputFile');
+const writeOutputFile = require('../writeOutputFile');
 
 function logObjProps(obj){
     if(typeof obj === 'object'){
