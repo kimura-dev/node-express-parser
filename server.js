@@ -8,9 +8,7 @@ const morgan = require('morgan');
 const connectToDatabase = require('./config/connectToDatabase');
 const completeConversionProcess = require('./utils/completeConversionProcess')
 const PORT = process.env.PORT;
-const ADDS_INPUT_FILE = './xml-to-xaml/input/ADDS_AMS_INPUT/Composities/FACUpdate-F.xml';
-const GMI_OUTPUT_DIR = './xml-to-xaml/output/GMI_MIDB_OUTPUT/Composites/';
-const ADDS_OUTPUT_DIR = './xaml-to-xml/output/';
+const DIR_MAPPING = require('./dirMapping')
 
 connectToDatabase();
 app.use(cors());
@@ -31,4 +29,8 @@ app.use('/', uploadsRouter)
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}...`));
 
-completeConversionProcess(ADDS_INPUT_FILE, GMI_OUTPUT_DIR, ADDS_OUTPUT_DIR);
+completeConversionProcess(
+    DIR_MAPPING.ADDS_INPUT_FILE, 
+    DIR_MAPPING.GMI_OUTPUT_DIR, 
+    DIR_MAPPING.ADDS_OUTPUT_DIR
+);

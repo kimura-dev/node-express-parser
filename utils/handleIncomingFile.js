@@ -12,7 +12,7 @@ function removeXmlHeaderAndFooter(dataStr){
     }
 }
 
- function handleIncomingFile(inputFile, outputFile){
+function handleIncomingFile(inputFile, outputFile){
     try {
         const fileContentStr =  readInputFile(inputFile);
         const newStr =  removeXmlHeaderAndFooter(fileContentStr);

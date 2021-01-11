@@ -5,7 +5,6 @@ let count = 0;
  function readInputFile(filePath) {
    count++
   try {
-    const fd = fs.openSync(filePath, 'rs')
     const file =  fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'})
     const fileToString = file.toString()
     console.log('File read successful' + " " + count)
