@@ -9,7 +9,7 @@ function writeOutputFile(fileName, data) {
     console.log('File write successful ' + count)
     return data
   } catch (error) {
-    console.error(`Got an error trying to write to a file: ${error.message}`);
+    throw new Error(`Got an error trying to write to a file: ${error.message}`)
   }
 }
 

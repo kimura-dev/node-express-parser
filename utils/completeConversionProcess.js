@@ -9,7 +9,7 @@ function completeConversionProcess(addsInputFile, gmiOutputDir, addsOutputDir){
         const ADDS = createADDS(`${gmiOutputDir}COMPLETE_GMI_UPDATE.txt`, `${addsOutputDir}COMPLETE_GMI_UPDATE.xml`);
         return ADDS
     } catch (error) {
-        console.error(error.message)
+        throw new Error(`Got an error inside of conversionProcess: ${error.message}`)
     }
 }
 

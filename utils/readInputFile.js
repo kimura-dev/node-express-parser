@@ -10,7 +10,7 @@ let count = 0;
     console.log('File read successful' + " " + count)
     return fileToString
   } catch (error) {
-    console.error(`Got an error trying to read the file: ${error.message}`)
+    throw new Error(`Got an error trying to read the file: ${error.message}`)
   }
 }
 

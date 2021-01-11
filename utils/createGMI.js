@@ -10,7 +10,8 @@ function replaceAll(data, search, replace) {
 }
 
  function createGMI(inputFile, outputFile){
-    // Read
+     try {
+         // Read
     const str =  readInputFile(inputFile)
     // Parse
     const first = replaceAll(str, "</", "Close_Tag")
@@ -22,6 +23,10 @@ function replaceAll(data, search, replace) {
     // Create
     writeOutputFile(outputFile, complete)
     return complete;
+     } catch (error) {
+         throw new Error(`Got an error inside of createGMI(): ${error.message}`)
+     }
+    
 }
 
 module.exports = createGMI
