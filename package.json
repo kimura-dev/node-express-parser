@@ -17,6 +17,7 @@
     "express-fileupload": "^1.2.0",
     "mongoose": "^5.11.9",
     "morgan": "^1.10.0",
+    "pg": "^8.5.1",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {

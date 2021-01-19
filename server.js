@@ -5,12 +5,12 @@ const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
-const connectToDatabase = require('./config/connectToDatabase');
+const connectToMongodDB = require('./config/connectToMongodDB');
 const completeConversionProcess = require('./utils/completeConversionProcess')
 const PORT = process.env.PORT;
 const DIR_MAPPING = require('./dirMapping')
 
-connectToDatabase();
+connectToMongodDB();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
